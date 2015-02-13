@@ -24,7 +24,7 @@ cacheSolve <- function(x, ...) {
         	return(cached)
         }
         message("Cache miss")
-        cached <- solve(x$get(), ...)
+        cached <- solve(x$get())
         x$setinv(cached)
         cached
 }
